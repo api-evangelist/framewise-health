@@ -1,0 +1,31 @@
+generated: '2026-07-19'
+method: searched
+source: https://framewisehealth.com (homepage + privacy policy)
+notes: >-
+  Framewise Health publishes no public API or OpenAPI, so these conformance
+  assertions are drawn from the compliance and integration posture the company
+  states on its own marketing site, not derived from a specification. Framewise
+  is a FHIR *consumer* (it reads patient data from EHRs over FHIR R4), not a
+  FHIR API publisher.
+standards:
+- id: fhir-r4
+  conforms: true
+  evidence: >-
+    Homepage states "FHIR-Native" integration and works with "any FHIR R4
+    endpoint" across Epic, Oracle Health (Cerner), Athenahealth, ModMed,
+    eClinicalWorks, and NextGen.
+- id: hipaa
+  conforms: true
+  evidence: Homepage and privacy policy state HIPAA compliance with an AWS BAA.
+- id: soc2
+  conforms: true
+  evidence: Homepage states SOC 2 compliance.
+- id: end-to-end-encryption
+  conforms: true
+  evidence: Homepage states end-to-end encryption of patient data.
+- id: oauth2
+  conforms: false
+  evidence: No public OAuth/OpenID authorization surface published.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public API specification published.

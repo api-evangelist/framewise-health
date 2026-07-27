@@ -1,8 +1,31 @@
 aid: framewise-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/framewise-health.png
 name: Framewise Health
-description: Framewise Health is a company surfaced as a portfolio company of y-combinator and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Framewise Health is an AI-native patient engagement platform (Y Combinator,
+  Spring 2026) that converts a patient's medical records into personalized,
+  clinically-reviewed educational videos. The platform pulls patient data from
+  electronic health records over any FHIR R4 endpoint, generates discharge and
+  treatment-adherence education tailored to the individual using institutional
+  protocols and drug-information databases, and delivers it by SMS in 75+
+  languages with no app and no login. It then tracks patient comprehension in
+  real time, giving care teams engagement data to flag which patients need
+  follow-up. Framewise integrates with Epic, Oracle Health (Cerner),
+  Athenahealth, ModMed, eClinicalWorks, and NextGen, and is HIPAA and SOC 2
+  compliant with an AWS BAA and end-to-end encryption. It targets hospitals,
+  pharmaceutical companies, medical device manufacturers, and private clinics
+  seeking to improve patient outcomes and medication adherence.
 url: https://raw.githubusercontent.com/api-evangelist/framewise-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +33,44 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-yc-batch: Spring 2026
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Healthcare
+- Patient Engagement
+- Patient Education
+- FHIR
+- EHR Integration
+- Health Literacy
+- Artificial Intelligence
+- HIPAA
+- SOC 2
 apis: []
+common:
+- type: DomainSecurity
+  url: security/framewise-health-domain-security.yml
+- type: Website
+  url: https://framewisehealth.com
+- type: PrivacyPolicy
+  url: https://framewisehealth.com/privacy
+- type: TermsOfService
+  url: https://framewisehealth.com/terms
+- type: Support
+  url: mailto:contact@framewisehealth.com
+- type: Compliance
+  url: https://framewisehealth.com
+- type: Conformance
+  url: conformance/framewise-health-conformance.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

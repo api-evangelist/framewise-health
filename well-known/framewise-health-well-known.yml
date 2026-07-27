@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of /.well-known/* on the Framewise Health host
+host: https://framewisehealth.com
+notes: >-
+  All probed /.well-known/ paths 308-redirect to www.framewisehealth.com and
+  return 404 there. No discovery documents are published. Absence is a valid,
+  expected result for a marketing/consumer site with no public API surface.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
